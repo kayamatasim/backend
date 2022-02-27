@@ -1,9 +1,13 @@
 let express=require('express');
 let fs=require('fs');
 let app=express();
-let port=process.env.PORT || 8080
+var port =(process.env.PORT || '3000');
 let products=[]
 app.use(express.json())
+
+app.get('/',(req,res)=>{
+     res.send('hello there');
+})
 app.get("/productlist",(req,res)=>{
     let porductinfo=JSON.parse(fs.readFileSync('product.json'));
 
@@ -18,4 +22,4 @@ app.post("/productstore",(req,res)=>{
     res.json(products);
 })
 
-app.listen(port,()=>{console.log('server is running baiby')})
+app.listen(port)
