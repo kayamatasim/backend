@@ -1,6 +1,7 @@
 let express=require('express');
 let fs=require('fs');
 let app=express();
+let cors=require('cors')
 var port =(process.env.PORT || '3000');
 let products=[]
 app.use(express.json())
