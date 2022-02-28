@@ -106,6 +106,4 @@ app.put('updateproductinfo',(req,res)=>{
     }
 })
 
-
-
 app.listen(port)
