@@ -1,8 +1,1 @@
-[
-    {
-        "pid":1,
-    "pname":"string",
-    "pric":10,
-    "pImage":"string"
-    }
-]
+[{"pid":"4","pname":null,"price":"3","pImage":null}]
